@@ -1,5 +1,5 @@
 
-name: Deploy Portfolio
+name: Deploy Portfolio and Temperature Converter
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'WebDev-L1-Portfolio/**'
+      - 'WebDev-L1-TemperatureConverter/**'
       - '.github/workflows/deploy-portfolio.yml'
   workflow_dispatch:
 
@@ -30,10 +31,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Upload portfolio files
+      - name: Prepare website files
+        run: |
+          mkdir -p _site/WebDev-L1-TemperatureConverter
+          cp -a WebDev-L1-Portfolio/. _site/
+          cp -a WebDev-L1-TemperatureConverter/. _site/WebDev-L1-TemperatureConverter/
+
+      - name: Upload website files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './WebDev-L1-Portfolio'
+          path: './_site'
 
       - name: Deploy to GitHub Pages
         id: deployment
