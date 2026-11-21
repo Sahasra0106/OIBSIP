@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter | Sahasra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-icon icon-one">❄</div>
+    <div class="background-icon icon-two">☀</div>
+    <div class="background-icon icon-three">🌡</div>
+
+    <main class="container">
+
+        <div class="heading">
+            <div class="main-icon">🌡️</div>
+
+            <h1>Temperature Converter</h1>
+
+            <p>Convert temperatures with ease ✨</p>
+        </div>
+
+        <section class="converter">
+
+            <div class="card-heading">
+                <span>🌍</span>
+                <h2>Temperature Calculator</h2>
+            </div>
+
+            <label for="temperature">Enter Temperature</label>
+
+            <div class="input-wrapper">
+                <span class="input-icon">🌡️</span>
+                <input
+                    type="number"
+                    id="temperature"
+                    placeholder="Enter temperature value"
+                    step="any"
+                >
+            </div>
+
+            <div class="unit-section">
+
+                <div class="unit-box">
+                    <label for="fromUnit">From</label>
+
+                    <select id="fromUnit">
+                        <option value="C">☀️ Celsius (°C)</option>
+                        <option value="F">🔥 Fahrenheit (°F)</option>
+                        <option value="K">🌡️ Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <div class="swap-icon">⇄</div>
+
+                <div class="unit-box">
+                    <label for="toUnit">To</label>
+
+                    <select id="toUnit">
+                        <option value="F">🔥 Fahrenheit (°F)</option>
+                        <option value="C">❄️ Celsius (°C)</option>
+                        <option value="K">🌡️ Kelvin (K)</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <button id="convertBtn">
+                ✨ Convert Temperature
+            </button>
+
+            <div class="result-box">
+
+                <p class="result-label">YOUR RESULT</p>
+
+                <div id="result" aria-live="polite">
+                    <span class="result-symbol">🌡️</span>
+                    <span>Result will appear here</span>
+                </div>
+
+            </div>
+
+            <button id="resetBtn" class="reset-btn">
+                ↻ Reset
+            </button>
+
+        </section>
+
+        <footer>
+            <p>Made with 💜 by <strong>Sahasra Kottakota</strong></p>
+            <p class="footer-subtitle">Oasis Infobyte · Web Development Internship</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
