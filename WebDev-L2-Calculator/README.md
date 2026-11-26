@@ -2,7 +2,13 @@
 # Modern Calculator
 
 A responsive and interactive calculator built using HTML, CSS and JavaScript as part of the Oasis Infobyte Web Development Internship – Level 2.
+## 🌐 Live Demo
 
+[Click here to view the Calculator](https://sahasra0106.github.io/OIBSIP/WebDev-L2-Calculator/)
+
+## 💻 Source Code
+
+[View Calculator Source Code on GitHub](https://github.com/Sahasra0106/OIBSIP/tree/main/WebDev-L2-Calculator)
 ## Features
 
 - Addition, subtraction, multiplication and division
