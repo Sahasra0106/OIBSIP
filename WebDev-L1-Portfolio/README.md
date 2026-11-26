@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built using HTML, CSS, and JavaS
 
 ## 🌐 Live Demo
 
-[View My Portfolio](https://sahasra0106.github.io/OIBSIP/)
+[View My Portfolio](https://sahasra0106.github.io/OIBSIP/WebDev-L1-Portfolio/)
 
 ## 👩‍💻 About Me
 
