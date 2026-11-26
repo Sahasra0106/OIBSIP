@@ -10,6 +10,7 @@ on:
       - 'WebDev-L1-TemperatureConverter/**'
       - 'WebDev-L2-Calculator/**'
       - '.github/workflows/deploy-portfolio.yml'
+      - 'WebDev-L2-TributePage/**'
   workflow_dispatch:
 
 permissions:
@@ -40,6 +41,8 @@ jobs:
           cp -a WebDev-L1-Portfolio/. _site/
           cp -a WebDev-L1-TemperatureConverter/. _site/WebDev-L1-TemperatureConverter/
           cp -a WebDev-L2-Calculator/. _site/WebDev-L2-Calculator/
+          mkdir -p _site/WebDev-L2-TributePage
+          cp -a WebDev-L2-TributePage/. _site/WebDev-L2-TributePage/
 
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
