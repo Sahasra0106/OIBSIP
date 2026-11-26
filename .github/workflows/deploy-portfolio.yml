@@ -1,5 +1,5 @@
 
-name: Deploy Portfolio and Temperature Converter
+name: Deploy OIBSIP Projects
 
 on:
   push:
@@ -8,6 +8,7 @@ on:
     paths:
       - 'WebDev-L1-Portfolio/**'
       - 'WebDev-L1-TemperatureConverter/**'
+      - 'WebDev-L2-Calculator/**'
       - '.github/workflows/deploy-portfolio.yml'
   workflow_dispatch:
 
@@ -34,8 +35,11 @@ jobs:
       - name: Prepare website files
         run: |
           mkdir -p _site/WebDev-L1-TemperatureConverter
+          mkdir -p _site/WebDev-L2-Calculator
+
           cp -a WebDev-L1-Portfolio/. _site/
           cp -a WebDev-L1-TemperatureConverter/. _site/WebDev-L1-TemperatureConverter/
+          cp -a WebDev-L2-Calculator/. _site/WebDev-L2-Calculator/
 
       - name: Upload website files
         uses: actions/upload-pages-artifact@v3
